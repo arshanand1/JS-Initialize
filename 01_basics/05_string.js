@@ -23,9 +23,10 @@ console.log(newString);
 const anotherString = gameName.slice(-8, 4)
 console.log(anotherString);
 
-const newStringOne = "   hitesh    "
+const newStringOne = "   arsh    "
 console.log(newStringOne);
 console.log(newStringOne.trim());
+//trim removes the extra space elements inserted by the user which we do not need 
 
 const url = "https://hitesh.com/hitesh%20choudhary"
 

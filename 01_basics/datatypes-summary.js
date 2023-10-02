@@ -23,12 +23,22 @@ console.log(id === anotherId);
 // Reference (Non primitive)
 
 // Array, Objects, Functions
+// objects heap memory mai create hote hain agar mai ek object ka reference ek doosre variable ko deta hu
+// toh dusra variable bhi original object mai changes karega 
 
 const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
     name: "hitesh",
     age: 22,
 }
+let myObj2 = myObj
+myObj2.name = "arsh"
+
+console.log(myObj.name);
+console.log(myObj2.name);
+
+//uper maine jab print kervaya toh dono jagha changes hogye because new variable ke paas heap memory mai
+//refrence hai jo ki original value ko point ker raha hai rather than creating a copy
 
 const myFunction = function(){
     console.log("Hello world");

@@ -24,7 +24,7 @@ map.set('IN', "India")
 
 
 // console.log(map);
-
+// maps mai for of use hoga to print key and values
 for (const [key, value] of map) {
     // console.log(key, ':-', value);
 }
@@ -34,7 +34,9 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
+// object mai for in use hoga to print key and values 
+for (const key in myObject) {
+    console.log(`${key} name is ${myObject[key]}`);
     
-// }
+}
+
